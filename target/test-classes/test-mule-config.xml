@@ -1,0 +1,14 @@
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:html-template-parser="http://www.mulesoft.org/schema/mule/html-template-parser"
+      xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+          http://www.mulesoft.org/schema/mule/html-template-parser http://www.mulesoft.org/schema/mule/html-template-parser/current/mule-html-template-parser.xsd">
+
+  <flow name="parseHtmlTemplateFlow">
+        <html-template-parser:parse-html-template template="Sample Heading : #[content.title]" >
+			<html-template-parser:input-parameters ><![CDATA[#[payload]]]></html-template-parser:input-parameters>
+		</html-template-parser:parse-html-template> 
+    </flow>
+
+</mule>
+
