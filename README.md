@@ -1,4 +1,4 @@
-# HTML Template Parser Extension
+# Dynamic Template Parser Extension
 A mule connector that parses html templates by evaluating and replacing the contained dwl code in the html file
 
 **Requires Java 1.8 to build**
