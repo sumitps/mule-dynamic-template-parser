@@ -1,5 +1,5 @@
 # Dynamic Template Parser Extension
-A mule connector that parses html templates by evaluating and replacing the contained dwl code in the html file
+A mule connector that parses any templates by evaluating and replacing the contained dwl code in the specified file. Here, file location can be dynamic.
 
 **Requires Java 1.8 to build**
 
